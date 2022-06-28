@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_div{
+            margin-top: 300px;
+           width:200px;
+           text-align: center;
+           border:5px solid red;
+        }
+        #display{
+            margin: 10px;
+            font-size:40px;
+            width:170px;
+            /* height:10px; */
+            border:5px solid blue;
+            /* padding:30%; */
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="main_div">
+        <center>
+        <div id="display"></div></center>
+    </div></center>
+   
+    <script>
+        show_time = () => {
+          var date = new Date();
+          var h = date.getHours();
+          var m = date.getMinutes();
+          var s = date.getSeconds();
+          
+          var text = h+":"+m+":"+s;
+          document.getElementById("display").innerHTML=text;
+        }
+        setInterval(show_time,1000);
+    </script>
+</body>
+</html>
