@@ -1,0 +1,23 @@
+body{
+    background-color:grey;
+    
+    text-align:center;
+    height: 100vh;
+}
+
+.container{
+    font-size: 10vh;
+    padding-top:40vh;
+}
+button{
+    font-size: 5vh;
+}
+#start{
+    background-color: green;
+}
+#stop{
+    background-color: red;
+}
+#reset{
+    background-color: blue;
+}
